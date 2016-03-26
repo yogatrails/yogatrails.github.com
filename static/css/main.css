@@ -234,7 +234,7 @@ ul.menu li a {
     padding-left: 15px;
     font-size: 1.5em;
 }
-@media (min-height: 600px) {
+@media (max-width: 600px) {
     .blog .post .post-wrap {
         padding-left: 0;
     }
