@@ -1,0 +1,333 @@
+/* Simple responsive Grid */
+[class*="col-"] {
+    float: left;
+}
+.container {
+    margin: auto;
+}
+
+/* Телефоны */
+@media (min-width: 320px) {
+    .container {
+        width: 320px;
+    }
+    .col-mobile-1 {
+        width: 12.5%;
+    }
+    .col-mobile-2 {
+        width: 25%;
+    }
+    .col-mobile-3 {
+        width: 37.5%;
+    }
+    .col-mobile-4 {
+        width: 50%;
+    }
+    .col-mobile-5 {
+        width: 62.5%;
+    }
+    .col-mobile-6 {
+        width: 75%;
+    }
+    .col-mobile-7 {
+        width: 87.5%;
+    }
+    .col-mobile-8 {
+        width: 100%;
+    }
+}
+/* Таблеты и телефоны в горизонтальной ориентировке */
+@media (min-width: 600px) {
+    .container {
+        width: 600px;
+    }
+    .col-tab-1 {
+        width: 12.5%;
+    }
+    .col-tab-2 {
+        width: 25%;
+    }
+    .col-tab-3 {
+        width: 37.5%;
+    }
+    .col-tab-4 {
+        width: 50%;
+    }
+    .col-tab-5 {
+        width: 62.5%;
+    }
+    .col-tab-6 {
+        width: 75%;
+    }
+    .col-tab-7 {
+        width: 87.5%;
+    }
+    .col-tab-8 {
+        width: 100%;
+    }
+}
+/* Планшеты */
+@media (min-width: 900px) {
+    .col-pl-1 {
+        width: 12.5%;
+    }
+    .col-pl-2 {
+        width: 25%;
+    }
+    .col-pl-3 {
+        width: 37.5%;
+    }
+    .col-pl-4 {
+        width: 50%;
+    }
+    .col-pl-5 {
+        width: 62.5%;
+    }
+    .col-pl-6 {
+        width: 75%;
+    }
+    .col-pl-7 {
+        width: 87.5%;
+    }
+    .col-pl-8 {
+        width: 100%;
+    }
+    .container {
+        width: 900px;
+    }
+}
+
+/* Desktop and notebooks */
+@media (min-width: 1140px) {
+    .container {
+        width: 1140px;
+    }
+    .col-desktop-1 {
+        width: 12.5%;
+    }
+    .col-desktop-2 {
+        width: 25%;
+    }
+    .col-desktop-3 {
+        width: 37.5%;
+    }
+    .col-desktop-4 {
+        width: 50%;
+    }
+    .col-desktop-5 {
+        width: 62.5%;
+    }
+    .col-desktop-6 {
+        width: 75%;
+    }
+    .col-desktop-7 {
+        width: 87.5%;
+    }
+    .col-desktop-8 {
+        width: 100%;
+    }
+}
+
+/* helpers classes*/
+.block-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* end helpers classes*/
+
+/* Interface Elements classes */
+.btn {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    background: #45883d;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #5fad55;
+    text-decoration: none;
+}
+/* end of Interface Elements classes */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-color: #dff7dc;
+    margin: 0;
+}
+
+header {
+    background-image: url('/static/img/header-background.png');
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+
+.logo {
+    background-image: url('/static/img/lotus.png');
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+.slogan h1 {
+    color: white;
+    margin: 40px auto 0 auto;
+    text-align: center;
+    font-size: 2.55em;
+}
+
+/* Menu */
+.menu-wrap {
+    height: 30px;
+}
+ul.menu {
+    list-style-type: none;
+    width: 75%;
+    margin: 26px auto 0 auto;
+    text-align: center;
+}
+ul.menu li {
+    display: inline-block;
+}
+ul.menu li a {
+    font-size: 24px;
+    color: #999999;
+    text-decoration: none;
+}
+/* End menu */
+
+/* Content */
+.content {
+    padding: 50px 0 20px 0;
+    min-height: 600px;
+}
+.blog .post {
+    float: left;
+    clear: both;
+}
+.blog .post h3 {
+    margin: 0 0 0 3px;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+.blog .post .date {
+    font-size: 0.9em;
+    padding-bottom: 15px;
+}
+.blog .post img.cover {
+    display: inline-block;
+    width: 100%;
+}
+.blog .post .post-wrap {
+    padding-left: 15px;
+    font-size: 1.5em;
+}
+@media (min-height: 600px) {
+    .blog .post .post-wrap {
+        padding-left: 0;
+    }
+}
+.blog .post .read-more {
+    height: 70px;
+    position: relative;
+}
+.blog .post .expand-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.blog hr.delimiter {
+    position: relative;
+    float: left;
+    clear: both;
+    border: none;
+    background-image: url('/static/img/delemiter-flower.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 39px;
+    display: block;
+}
+.blog hr.delimiter:before {
+    content: ' ';
+    border-top: 1px solid #666666;
+    width: 45%;
+    display: block;
+    margin-top: 20px;
+}
+.blog hr.delimiter:after {
+    content: ' ';
+    border-top: 1px solid #666666;
+    width: 46%;
+    display: block;
+    top: 20px;
+    position: absolute;
+    right: 0;
+}
+
+/* End content */
+
+/* Footer */
+footer {
+    background-image: url('/static/img/footer-background.png');
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 770px;
+    position: relative;
+    float: left;
+    clear: both;
+    margin-top: 30px;
+}
+footer ul.social-media-links {
+    margin: 0 auto 0 auto;
+    padding-top: 160px;
+    display: inline-block;
+}
+footer ul.social-media-links li {
+    position: relative;
+    min-width: 52px;
+    min-height: 52px;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+    text-decoration: none;
+    display: inline-block;
+}
+footer ul.social-media-links li:last-child {
+    margin-right: 0;
+}
+footer ul.social-media-links li.fb {
+    background-image: url('/static/img/sm-labels/fb.png');
+}
+footer ul.social-media-links li.vk {
+    background-image: url('/static/img/sm-labels/vk.png');
+}
+footer ul.social-media-links li.google-plus {
+    background-image: url('/static/img/sm-labels/google-plus.png');
+}
+footer ul.social-media-links li.insta {
+    background-image: url('/static/img/sm-labels/insta.png');
+}
+
+footer .copyright {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1em;
+}
+/* End footer */
